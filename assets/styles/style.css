@@ -1,0 +1,147 @@
+/*------  General -------*/
+html, body {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+
+/*------  Carousel -------*/
+.carousel-container {
+    height: 86vh;
+    /* Set the carousel height to 80% of the viewport height */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+
+/* Animación para el botón de desplazamiento hacia abajo (salta) */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Animación para el botón del carrusel que se mueve hacia la izquierda */
+@keyframes move-left {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+/* Animación para el botón del carrusel que se mueve hacia la derecha */
+@keyframes move-right {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+/* Estilos para los botones */
+.scroll-down-button {
+    background-color: rgba(55, 65, 81, 1);
+    /* bg-gray-700 */
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-down-button:hover {
+    background-color: black;
+    /* hover:bg-black */
+}
+
+/* Aplica la animación de salto al botón de desplazamiento hacia abajo */
+.scroll-down-bounce {
+    animation: bounce 2s infinite;
+    /* Animación de rebote */
+}
+
+/* Aplica las animaciones a los botones del carrusel */
+.carousel-button-left {
+    animation: move-left 2s infinite;
+    /* Animación de movimiento hacia la izquierda */
+}
+
+.carousel-button-right {
+    animation: move-right 2s infinite;
+    /* Animación de movimiento hacia la derecha */
+}
+
+
+
+
+/*------ Contact Seccion -------*/
+/* Definición de la animación de salto */
+@keyframes small-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+        /* Ajusta el valor para un salto más pequeño o más grande */
+    }
+}
+
+/* Aplica la animación a las imágenes */
+.location-image {
+    animation: small-bounce 2s infinite ease-in-out;
+    /* Duración de 2s, repetición infinita */
+}

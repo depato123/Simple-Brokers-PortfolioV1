@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolios web Brokers de Seguros, tu broker de confianza.">
+    <title>Brokers de seguros</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-gray-100 min-h-18 shadow fixed w-screen top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex">
+                    <a href="#Inicio" class="flex items-center text-black font-bold">
+                        <!-- Logo -->
+                        <img src="assets/images/logo.png" alt="Logo Brokers de seguro Daniel Martinez"
+                            class="max-w-10 max-h-10 mr-1">
+                        Brokers de Seguros
+                    </a>
+                </div>
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 ml-10">
+                    <a href="#Inicio" class="text-gray-500 hover:text-gray-700">Inicio</a>
+                    <a href="#Nosotros" class="text-gray-500 hover:text-gray-700">Nosotros</a>
+                    <a href="#Servicios" class="text-gray-500 hover:text-gray-700">Servicios</a>
+                    <a href="#Contacto" class="text-gray-500 hover:text-gray-700">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secciones de contenido: Inicio, Nosotros, Servicios, Contacto -->
+    <!-- Seccion Inicio -->
+    <section id="Inicio" class="relative h-screen lg:h-full">
+        <!-- Content Placeholder with Carousel -->
+        <div class="carousel-container relative h-[87vh]">
+            <!-- Carousel Wrapper -->
+            <div class="carousel relative h-full w-full" id="carousel">
+                <!-- Carousel Items -->
+                <div class="carousel-item relative w-full h-full">
+                    <img src="assets/images/banner1.png" alt="Imagen Carousel Auto" class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item relative w-full h-full">
+                    <img src="assets/images/banner2.jpg" alt="Imagen Carousel Personal"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="carousel-item relative w-full h-full">
+                    <img src="assets/images/banner3.jpg" alt="Imagen Carousel Familiar"
+                        class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Superposición de contenido centrado -->
+            <div class="absolute inset-0 flex items-center justify-center text-center px-4 md:px-16">
+                <!-- Superposición oscura -->
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+
+                <!-- Contenido del texto -->
+                <div class="relative flex flex-col justify-center items-center z-10 h-2/3 sm:h-auto">
+                    <div class="flex flex-col items-center w-full">
+                        <img src="assets/images/logo2.png" alt="Logo Brokers de Seguros Grande"
+                            class="max-w-24 md:max-w-48 mb-2 border-gray-400" data-aos="fade-left">
+                        <h1 class="text-white text-xl md:text-3xl mb-1" data-aos="fade-right">
+                            <hr class="border-t-2 border-white my-2 mx-auto w-2/3 shadow-sm" data-aos="fade-right">
+                            BROKERS DE SEGUROS
+                            DANIEL MARTINEZ
+                        </h1>
+                    </div>
+                    <h2 class="text-2xl md:text-4xl font-bold mb-2 text-blue-300" data-aos="fade-right">
+                        Protegiendo lo que más valoras, siempre.
+                    </h2>
+                    <p class="text-white text-sm md:text-xl mb-4 md:mb-6" data-aos="fade-right">
+                        Somos tu aliado confiable en la búsqueda de las mejores coberturas de seguros.
+                        <br> Nos encargamos de que cada póliza se ajuste a tus necesidades específicas
+                    </p>
+                    <a href="#Contacto" data-aos="fade-left"
+                        class="inline-block px-4 py-2 text-sm md:text-lg font-medium text-blue-100 border border-blue-100 rounded-lg shadow-md bg-transparent hover:bg-gradient-to-r from-blue-400 to-blue-500 hover:text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Contacta a un Asesor
+                    </a>
+                </div>
+            </div>
+
+            <!-- Carousel Buttons -->
+            <div class="absolute inset-y-0 left-0 flex items-center z-20 px-4">
+                <div class="carousel-button-left bg-gray-700 text-white p-4 rounded-full hover:bg-black cursor-pointer"
+                    id="prevBtn">&#10094;</div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center z-20 px-4">
+                <div class="carousel-button-right bg-gray-700 text-white p-4 rounded-full hover:bg-black cursor-pointer"
+                    id="nextBtn">&#10095;</div>
+            </div>
+        </div>
+
+        <!-- Scroll Down Button -->
+        <div class="flex justify-center mt-4 md:mt-8">
+            <a href="#Nosotros"
+                class="scroll-down-button scroll-down-bounce bg-gray-700 text-white p-4 rounded-full hover:bg-black">
+                &#8964;
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="Nosotros" class="flex md:mt-10 bg-gray-100 items-center">
+        <div class="max-w-7xl  min-h-screen  mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <!-- Text Content -->
+                <div>
+                    <h2 class="text-3xl font-bold text-black mb-4">Sobre Nosotros</h2>
+                    <p class="text-gray-500 mb-8">
+                        Somos una empresa de Brokers de seguros con más de dos decadas a al servicio de nuestros
+                        clientes, ofreciendo la mejor calidad de prestaciones. Trabajamos con las mejores compañias de
+                        seguro, tanto personal como automovilistico o patrimoniales.
+                    </p>
+                    <dl class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
+                        <div>
+                            <dt class="font-semibold text-black">Fundación</dt>
+                            <dd class="text-gray-500">+15 años</dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-black">Remuneraciones</dt>
+                            <dd class="text-gray-500">+1000 tramites efectuados</dd>
+                        </div>
+                        <div>
+                            <dt class="font-semibold text-black">Ubicación</dt>
+                            <dd class="text-gray-500">Avellaneda y Lanús</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- Image Section -->
+                <div class="mt-10 lg:mt-0 flex justify-center lg:justify-end">
+                    <!-- Actual image instead of placeholder -->
+                    <img src="assets/images/local.jpg" alt="Sucursal seguros Avellaneda" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="Servicios" class="flex items-center">
+        <div class="max-w-7xl min-h-screen mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-black mb-4" data-aos="fade-right">Nuestros Servicios</h2>
+            <div class="w-full flex items-center justify-center">
+                <p class="text-gray-500 mb-12 w-full md:w-1/2" data-aos="fade-right" data-aos-delay="200">
+                    Ofrecemos las mejores coberturas para vos: 15 años de experiencia como broker de seguros, más de
+                    1000 clientes felices, soluciones personalizadas para tu tranquilidad
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+                    data-aos="fade-left" data-aos-delay="300">
+                    <div class="mb-4">
+                        <img src="assets/images/gestion1.jpg" alt="Icono de Servicio"
+                            class="mx-auto w-1/2 sm:w-1/3 md:w-full">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Gestión</h3>
+                    <p class="text-gray-500">
+                        Tramitamos tus documentos para facilitar tu seguro ideal
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+                    data-aos="fade-left" data-aos-delay="400">
+                    <div class="mb-4">
+                        <img src="assets/images/seguros2.jpg" alt="Icono de Servicio"
+                            class="mx-auto w-1/2 sm:w-1/3 md:w-full">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Seguros</h3>
+                    <p class="text-gray-500">
+                        Las mejores y más confiables aseguradoras del mercado
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300"
+                    data-aos="fade-left" data-aos-delay="500">
+                    <div class="mb-4">
+                        <img src="assets/images/variedad3.jpg" alt="Icono de Servicio"
+                            class="mx-auto w-1/2 sm:w-1/3 md:w-full">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Variedad</h3>
+                    <p class="text-gray-500">
+                        Variedad de pólizas: Personal, Vehicular, Patrimonial, y documentaciones, etc. Siempre con las
+                        mejores soluciones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contacto" class="bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-black mb-12">¿Dónde estamos?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Location 1 -->
+                <div class="text-center">
+                    <img src="assets/images/google1.png" alt="Local de Avellaneda"
+                        class="location-image w-full max-h-[355px] object-cover rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl location-image font-semibold text-gray-800 mb-2">Sucursal Avellaneda</h3>
+                    <p class="text-gray-500 mb-2">Manuel Estevez 1234, Dock Sud, Provincia de Buenos Aires</p>
+                    <p class="text-gray-500 mb-4">Tel: +54 (011) 4083-0416</p>
+                    <a href="https://wa.me/5491140830416?text=Hola,%20quisiera%20averiguar%20por%20un%20presupuesto%20para%20un%20seguro"
+                        target="_blank"
+                        class="inline-flex items-center px-4 py-2 mb-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-5 h-5 mr-2">
+                            <path
+                                d="M20.52 3.48A11.915 11.915 0 0012 0a11.939 11.939 0 00-8.52 3.48C1.737 5.224 0 8.227 0 11.558a11.93 11.93 0 001.893 6.439l-1.25 4.569 4.684-1.219A11.893 11.893 0 0012 23.116c3.332 0 6.336-1.737 8.48-4.518A11.93 11.93 0 0024 11.558c0-3.331-1.74-6.334-3.48-8.08zM12 21.19c-2.178 0-4.255-.667-6.031-1.924l-.42-.283-3.112.809.833-2.92-.297-.428A9.925 9.925 0 012 11.558c0-2.697 1.043-5.237 2.939-7.131A9.947 9.947 0 0112 2.434a9.946 9.946 0 017.061 2.993A9.946 9.946 0 0122 11.558c0 2.697-1.043 5.238-2.939 7.132A9.948 9.948 0 0112 21.19zm5.85-7.117l-2.555-.729a.634.634 0 00-.629.163l-.908.928a9.862 9.862 0 01-3.893-3.893l.928-.907a.634.634 0 00.163-.63l-.729-2.555a.634.634 0 00-.98-.303l-1.455 1.12a1.827 1.827 0 00-.516 2.3c.682 1.26 1.664 2.242 2.924 2.924.477.259 1.018.391 1.563.391.479 0 .96-.127 1.38-.392l1.121-1.455a.634.634 0 00-.303-.98z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <!-- Facebook Button -->
+                    <a href="https://www.facebook.com/share/7BjFC3dB8UMAs82B/?mibextid=qi2Omg" target="_blank"
+                        class="inline-flex items-center px-4 py-2 mb-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-5 h-5 mr-2">
+                            <path
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88V15.47h-2.54v-3h2.54v-2.24c0-2.52 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.48h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.77l-.44 3h-2.33v6.41c4.78-.75 8.44-4.89 8.44-9.88z" />
+                        </svg>
+                        Facebook
+                    </a>
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/segurosdocksud?igsh=YXM5OGJ6a2R3Ymky" target="_blank"
+                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                        <svg width="48" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-5 mr-2">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM24.0012 11.2C20.5249 11.2 20.0886 11.2152 18.7233 11.2773C17.3606 11.3397 16.4305 11.5555 15.6166 11.872C14.7747 12.1989 14.0606 12.6363 13.3491 13.348C12.6371 14.0595 12.1997 14.7736 11.8717 15.6152C11.5544 16.4294 11.3384 17.3598 11.2771 18.7219C11.216 20.0873 11.2 20.5238 11.2 24.0001C11.2 27.4764 11.2155 27.9114 11.2773 29.2767C11.34 30.6394 11.5557 31.5695 11.872 32.3834C12.1992 33.2253 12.6365 33.9394 13.3483 34.6509C14.0595 35.3629 14.7736 35.8013 15.615 36.1283C16.4294 36.4448 17.3598 36.6605 18.7222 36.7229C20.0876 36.7851 20.5236 36.8003 23.9996 36.8003C27.4762 36.8003 27.9111 36.7851 29.2765 36.7229C30.6391 36.6605 31.5703 36.4448 32.3848 36.1283C33.2264 35.8013 33.9394 35.3629 34.6506 34.6509C35.3626 33.9394 35.8 33.2253 36.128 32.3837C36.4427 31.5695 36.6587 30.6391 36.7227 29.277C36.784 27.9116 36.8 27.4764 36.8 24.0001C36.8 20.5238 36.784 20.0876 36.7227 18.7222C36.6587 17.3595 36.4427 16.4294 36.128 15.6155C35.8 14.7736 35.3626 14.0595 34.6506 13.348C33.9386 12.636 33.2266 12.1987 32.384 11.872C31.5679 11.5555 30.6373 11.3397 29.2746 11.2773C27.9092 11.2152 27.4746 11.2 23.9972 11.2H24.0012Z"
+                                fill="#FFFFFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.8529 13.5067C23.1937 13.5062 23.574 13.5067 24.0012 13.5067C27.4188 13.5067 27.8239 13.519 29.1735 13.5803C30.4215 13.6374 31.0989 13.8459 31.5501 14.0211C32.1474 14.2531 32.5733 14.5304 33.021 14.9784C33.469 15.4264 33.7464 15.8531 33.9789 16.4505C34.1541 16.9011 34.3629 17.5785 34.4197 18.8265C34.481 20.1758 34.4944 20.5812 34.4944 23.9972C34.4944 27.4132 34.481 27.8186 34.4197 29.1679C34.3626 30.4159 34.1541 31.0933 33.9789 31.5439C33.7469 32.1413 33.469 32.5666 33.021 33.0144C32.573 33.4624 32.1477 33.7397 31.5501 33.9717C31.0994 34.1477 30.4215 34.3557 29.1735 34.4128C27.8242 34.4741 27.4188 34.4874 24.0012 34.4874C20.5833 34.4874 20.1782 34.4741 18.8289 34.4128C17.5809 34.3552 16.9035 34.1466 16.4521 33.9714C15.8547 33.7394 15.428 33.4621 14.98 33.0141C14.532 32.5661 14.2547 32.1405 14.0222 31.5429C13.847 31.0922 13.6382 30.4149 13.5814 29.1669C13.52 27.8175 13.5078 27.4122 13.5078 23.994C13.5078 20.5758 13.52 20.1726 13.5814 18.8233C13.6384 17.5753 13.847 16.8979 14.0222 16.4467C14.2542 15.8494 14.532 15.4227 14.98 14.9747C15.428 14.5267 15.8547 14.2494 16.4521 14.0168C16.9033 13.8408 17.5809 13.6328 18.8289 13.5755C20.0097 13.5222 20.4673 13.5062 22.8529 13.5035V13.5067ZM30.8338 15.632C29.9858 15.632 29.2978 16.3193 29.2978 17.1675C29.2978 18.0155 29.9858 18.7035 30.8338 18.7035C31.6818 18.7035 32.3698 18.0155 32.3698 17.1675C32.3698 16.3195 31.6818 15.632 30.8338 15.632ZM24.0012 17.4267C20.371 17.4267 17.4278 20.37 17.4278 24.0001C17.4278 27.6303 20.371 30.5722 24.0012 30.5722C27.6314 30.5722 30.5735 27.6303 30.5735 24.0001C30.5735 20.37 27.6314 17.4267 24.0012 17.4267Z"
+                                fill="#FFFFFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.0012 19.7334C26.3575 19.7334 28.2679 21.6436 28.2679 24.0001C28.2679 26.3564 26.3575 28.2668 24.0012 28.2668C21.6446 28.2668 19.7345 26.3564 19.7345 24.0001C19.7345 21.6436 21.6446 19.7334 24.0012 19.7334Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="text-center">
+                    <img src="assets/images/google2.png" alt="Local de Lanus"
+                        class="location-image w-full max-h-[355px] object-cover rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl location-image font-semibold text-gray-800 mb-2">Sucursal Lanús</h3>
+                    <p class="text-gray-500 mb-2">Centenario Uruguayo 1217, Lanús, Provincia de Buenos Aires</p>
+                    <p class="text-gray-500 mb-4">Tel: +54 (011) 3694-2482</p>
+                    <a href="https://wa.me/5491136942482?text=Hola,%20quisiera%20averiguar%20por%20un%20presupuesto%20para%20un%20seguro"
+                        target="_blank"
+                        class="inline-flex items-center px-4 py-2 mb-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-5 h-5 mr-2">
+                            <path
+                                d="M20.52 3.48A11.915 11.915 0 0012 0a11.939 11.939 0 00-8.52 3.48C1.737 5.224 0 8.227 0 11.558a11.93 11.93 0 001.893 6.439l-1.25 4.569 4.684-1.219A11.893 11.893 0 0012 23.116c3.332 0 6.336-1.737 8.48-4.518A11.93 11.93 0 0024 11.558c0-3.331-1.74-6.334-3.48-8.08zM12 21.19c-2.178 0-4.255-.667-6.031-1.924l-.42-.283-3.112.809.833-2.92-.297-.428A9.925 9.925 0 012 11.558c0-2.697 1.043-5.237 2.939-7.131A9.947 9.947 0 0112 2.434a9.946 9.946 0 017.061 2.993A9.946 9.946 0 0122 11.558c0 2.697-1.043 5.238-2.939 7.132A9.948 9.948 0 0112 21.19zm5.85-7.117l-2.555-.729a.634.634 0 00-.629.163l-.908.928a9.862 9.862 0 01-3.893-3.893l.928-.907a.634.634 0 00.163-.63l-.729-2.555a.634.634 0 00-.98-.303l-1.455 1.12a1.827 1.827 0 00-.516 2.3c.682 1.26 1.664 2.242 2.924 2.924.477.259 1.018.391 1.563.391.479 0 .96-.127 1.38-.392l1.121-1.455a.634.634 0 00-.303-.98z" />
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <!-- Facebook Button -->
+                    <a href="https://www.facebook.com/share/mNNDPaA244ADxed6/?mibextid=qi2Omg" target="_blank"
+                        class="inline-flex items-center px-4 py-2 mb-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                            class="w-5 h-5 mr-2">
+                            <path
+                                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88V15.47h-2.54v-3h2.54v-2.24c0-2.52 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.48h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.77l-.44 3h-2.33v6.41c4.78-.75 8.44-4.89 8.44-9.88z" />
+                        </svg>
+                        Facebook
+                    </a>
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/brokersdeseguroslanus?igsh=dTJxN25pejJ4Yzhv" target="_blank"
+                        class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                        <svg width="48" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-5 mr-2">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM24.0012 11.2C20.5249 11.2 20.0886 11.2152 18.7233 11.2773C17.3606 11.3397 16.4305 11.5555 15.6166 11.872C14.7747 12.1989 14.0606 12.6363 13.3491 13.348C12.6371 14.0595 12.1997 14.7736 11.8717 15.6152C11.5544 16.4294 11.3384 17.3598 11.2771 18.7219C11.216 20.0873 11.2 20.5238 11.2 24.0001C11.2 27.4764 11.2155 27.9114 11.2773 29.2767C11.34 30.6394 11.5557 31.5695 11.872 32.3834C12.1992 33.2253 12.6365 33.9394 13.3483 34.6509C14.0595 35.3629 14.7736 35.8013 15.615 36.1283C16.4294 36.4448 17.3598 36.6605 18.7222 36.7229C20.0876 36.7851 20.5236 36.8003 23.9996 36.8003C27.4762 36.8003 27.9111 36.7851 29.2765 36.7229C30.6391 36.6605 31.5703 36.4448 32.3848 36.1283C33.2264 35.8013 33.9394 35.3629 34.6506 34.6509C35.3626 33.9394 35.8 33.2253 36.128 32.3837C36.4427 31.5695 36.6587 30.6391 36.7227 29.277C36.784 27.9116 36.8 27.4764 36.8 24.0001C36.8 20.5238 36.784 20.0876 36.7227 18.7222C36.6587 17.3595 36.4427 16.4294 36.128 15.6155C35.8 14.7736 35.3626 14.0595 34.6506 13.348C33.9386 12.636 33.2266 12.1987 32.384 11.872C31.5679 11.5555 30.6373 11.3397 29.2746 11.2773C27.9092 11.2152 27.4746 11.2 23.9972 11.2H24.0012Z"
+                                fill="#FFFFFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.8529 13.5067C23.1937 13.5062 23.574 13.5067 24.0012 13.5067C27.4188 13.5067 27.8239 13.519 29.1735 13.5803C30.4215 13.6374 31.0989 13.8459 31.5501 14.0211C32.1474 14.2531 32.5733 14.5304 33.021 14.9784C33.469 15.4264 33.7464 15.8531 33.9789 16.4505C34.1541 16.9011 34.3629 17.5785 34.4197 18.8265C34.481 20.1758 34.4944 20.5812 34.4944 23.9972C34.4944 27.4132 34.481 27.8186 34.4197 29.1679C34.3626 30.4159 34.1541 31.0933 33.9789 31.5439C33.7469 32.1413 33.469 32.5666 33.021 33.0144C32.573 33.4624 32.1477 33.7397 31.5501 33.9717C31.0994 34.1477 30.4215 34.3557 29.1735 34.4128C27.8242 34.4741 27.4188 34.4874 24.0012 34.4874C20.5833 34.4874 20.1782 34.4741 18.8289 34.4128C17.5809 34.3552 16.9035 34.1466 16.4521 33.9714C15.8547 33.7394 15.428 33.4621 14.98 33.0141C14.532 32.5661 14.2547 32.1405 14.0222 31.5429C13.847 31.0922 13.6382 30.4149 13.5814 29.1669C13.52 27.8175 13.5078 27.4122 13.5078 23.994C13.5078 20.5758 13.52 20.1726 13.5814 18.8233C13.6384 17.5753 13.847 16.8979 14.0222 16.4467C14.2542 15.8494 14.532 15.4227 14.98 14.9747C15.428 14.5267 15.8547 14.2494 16.4521 14.0168C16.9033 13.8408 17.5809 13.6328 18.8289 13.5755C20.0097 13.5222 20.4673 13.5062 22.8529 13.5035V13.5067ZM30.8338 15.632C29.9858 15.632 29.2978 16.3193 29.2978 17.1675C29.2978 18.0155 29.9858 18.7035 30.8338 18.7035C31.6818 18.7035 32.3698 18.0155 32.3698 17.1675C32.3698 16.3195 31.6818 15.632 30.8338 15.632ZM24.0012 17.4267C20.371 17.4267 17.4278 20.37 17.4278 24.0001C17.4278 27.6303 20.371 30.5722 24.0012 30.5722C27.6314 30.5722 30.5735 27.6303 30.5735 24.0001C30.5735 20.37 27.6314 17.4267 24.0012 17.4267Z"
+                                fill="#FFFFFF" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.0012 19.7334C26.3575 19.7334 28.2679 21.6436 28.2679 24.0001C28.2679 26.3564 26.3575 28.2668 24.0012 28.2668C21.6446 28.2668 19.7345 26.3564 19.7345 24.0001C19.7345 21.6436 21.6446 19.7334 24.0012 19.7334Z"
+                                fill="#FFFFFF" />
+                        </svg>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <!-- Informacion Seguros -->
+                <div class="flex flex-col md:flex-row items-center justify-between w-2/3 md:w-1/2">
+                    <img src="assets/images/logo.png" alt="Logo Brokers de seguro Daniel Martinez"
+                        class="max-w-8 max-h-8">
+                    <div class="text-start">
+                        <p class="text-lg text-gray-700 text-center">
+                            Daniel Adrián Martinez - Productor de Seguros - Matrícula N°77284
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex space-x-6 text-gray-500 mb-4 md:mb-0">
+                    <a href="#Inicio" class="hover:text-gray-700">Inicio</a>
+                    <a href="#Nosotros" class="hover:text-gray-700">Nosotros</a>
+                    <a href="#Servicios" class="hover:text-gray-700">Servicios</a>
+                    <a href="#Contacto" class="hover:text-gray-700">Contacto</a>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="flex w-[100px] justify-between">
+                    <a href="https://wa.me/5491140830416?text=Hola,%20quisiera%20averiguar%20por%20un%20presupuesto%20para%20un%20seguro"
+                        target="_blank" class="hover:text-gray-700">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="90px" height="90px"
+                            viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve"
+                            class="w-6 h-6">
+                            <g>
+                                <path fill="#4A4A4A"
+                                    d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522
+                                    c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982
+                                    c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537
+                                    c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938
+                                    c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537
+                                    c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333
+                                    c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882
+                                    c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977
+                                    c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344
+                                    c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223
+                                    C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z" />
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/brokersdesegurosavellanedagrup?mibextid=qi2Omg&rdid=WiCNsxqBBRKuaFKd&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F7BjFC3dB8UMAs82B%2F%3Fmibextid%3Dqi2Omg"
+                        target="_blank" class="hover:text-gray-700">
+                        <svg enable-background="new 0 0 550 550" id="Layer_1" version="1.1" viewBox="0 0 550 550"
+                            xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" class="w-6 h-6">
+                            <g>
+                                <g>
+                                    <circle cx="275" cy="275" fill="#4A4A4A" r="256" /> <!-- Ajuste de color aquí -->
+                                    <path
+                                        d="M236.1,190.8c0,7.4,0,40.4,0,40.4h-29.6v49.4h29.6V416h60.8V280.5h40.8c0,0,3.8-23.7,5.7-49.6c-5.3,0-46.2,0-46.2,0s0-28.7,0-33.8c0-5,6.6-11.8,13.2-11.8c6.5,0,20.3,0,33.1,0c0-6.7,0-30,0-51.4c-17.1,0-36.5,0-45,0C234.6,134,236.1,183.4,236.1,190.8z"
+                                        fill="#FFFFFF" id="Facebook_4_" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/segurosdocksud?igsh=YXM5OGJ6a2R3Ymky" target="_blank"
+                        class="hover:text-gray-700">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM24.0012 11.2C20.5249 11.2 20.0886 11.2152 18.7233 11.2773C17.3606 11.3397 16.4305 11.5555 15.6166 11.872C14.7747 12.1989 14.0606 12.6363 13.3491 13.348C12.6371 14.0595 12.1997 14.7736 11.8717 15.6152C11.5544 16.4294 11.3384 17.3598 11.2771 18.7219C11.216 20.0873 11.2 20.5238 11.2 24.0001C11.2 27.4764 11.2155 27.9114 11.2773 29.2767C11.34 30.6394 11.5557 31.5695 11.872 32.3834C12.1992 33.2253 12.6365 33.9394 13.3483 34.6509C14.0595 35.3629 14.7736 35.8013 15.615 36.1283C16.4294 36.4448 17.3598 36.6605 18.7222 36.7229C20.0876 36.7851 20.5236 36.8003 23.9996 36.8003C27.4762 36.8003 27.9111 36.7851 29.2765 36.7229C30.6391 36.6605 31.5703 36.4448 32.3848 36.1283C33.2264 35.8013 33.9394 35.3629 34.6506 34.6509C35.3626 33.9394 35.8 33.2253 36.128 32.3837C36.4427 31.5695 36.6587 30.6391 36.7227 29.277C36.784 27.9116 36.8 27.4764 36.8 24.0001C36.8 20.5238 36.784 20.0876 36.7227 18.7222C36.6587 17.3595 36.4427 16.4294 36.128 15.6155C35.8 14.7736 35.3626 14.0595 34.6506 13.348C33.9386 12.636 33.2266 12.1987 32.384 11.872C31.5679 11.5555 30.6373 11.3397 29.2746 11.2773C27.9092 11.2152 27.4746 11.2 23.9972 11.2H24.0012Z"
+                                fill="#4A4A4A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.8529 13.5067C23.1937 13.5062 23.574 13.5067 24.0012 13.5067C27.4188 13.5067 27.8239 13.519 29.1735 13.5803C30.4215 13.6374 31.0989 13.8459 31.5501 14.0211C32.1474 14.2531 32.5733 14.5304 33.021 14.9784C33.469 15.4264 33.7464 15.8531 33.9789 16.4505C34.1541 16.9011 34.3629 17.5785 34.4197 18.8265C34.481 20.1758 34.4944 20.5812 34.4944 23.9972C34.4944 27.4132 34.481 27.8186 34.4197 29.1679C34.3626 30.4159 34.1541 31.0933 33.9789 31.5439C33.7469 32.1413 33.469 32.5666 33.021 33.0144C32.573 33.4624 32.1477 33.7397 31.5501 33.9717C31.0994 34.1477 30.4215 34.3557 29.1735 34.4128C27.8242 34.4741 27.4188 34.4874 24.0012 34.4874C20.5833 34.4874 20.1782 34.4741 18.8289 34.4128C17.5809 34.3552 16.9035 34.1466 16.4521 33.9714C15.8547 33.7394 15.428 33.4621 14.98 33.0141C14.532 32.5661 14.2547 32.1405 14.0222 31.5429C13.847 31.0922 13.6382 30.4149 13.5814 29.1669C13.52 27.8175 13.5078 27.4122 13.5078 23.994C13.5078 20.5758 13.52 20.1726 13.5814 18.8233C13.6384 17.5753 13.847 16.8979 14.0222 16.4467C14.2542 15.8494 14.532 15.4227 14.98 14.9747C15.428 14.5267 15.8547 14.2494 16.4521 14.0168C16.9033 13.8408 17.5809 13.6328 18.8289 13.5755C20.0097 13.5222 20.4673 13.5062 22.8529 13.5035V13.5067ZM30.8338 15.632C29.9858 15.632 29.2978 16.3193 29.2978 17.1675C29.2978 18.0155 29.9858 18.7035 30.8338 18.7035C31.6818 18.7035 32.3698 18.0155 32.3698 17.1675C32.3698 16.3195 31.6818 15.632 30.8338 15.632ZM24.0012 17.4267C20.371 17.4267 17.4278 20.37 17.4278 24.0001C17.4278 27.6303 20.371 30.5722 24.0012 30.5722C27.6314 30.5722 30.5735 27.6303 30.5735 24.0001C30.5735 20.37 27.6314 17.4267 24.0012 17.4267Z"
+                                fill="#4A4A4A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M24.0012 19.7334C26.3575 19.7334 28.2679 21.6436 28.2679 24.0001C28.2679 26.3564 26.3575 28.2668 24.0012 28.2668C21.6446 28.2668 19.7345 26.3564 19.7345 24.0001C19.7345 21.6436 21.6446 19.7334 24.0012 19.7334Z"
+                                fill="#4A4A4A" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="flex items-center justify-center space-x-2 mb-4 md:mb-0">
+                <!-- Logo -->
+                <span class="mt-5 md:mt-0 text-gray-500">&copy; 2024 PPataneFrisone Design.</span>
+            </div>
+
+        </div>
+    </footer>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom Scripts -->
+    <script src="utils/carousel.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
